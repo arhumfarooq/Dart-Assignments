@@ -1,0 +1,84 @@
+q1
+
+void main() {
+  List<int> numbers = [10, 20, 5, 30, 15];
+
+  int smallest = numbers[0];
+  int greatest = numbers[0];
+
+  for (int number in numbers) {
+    if (number < smallest) {
+      smallest = number;
+    }
+    if (number > greatest) {
+      greatest = number;
+    }
+  }
+
+  print('Smallest number: $smallest');
+  print('Greatest number: $greatest');
+}
+
+
+
+
+q2
+
+void main() {
+  List<String> usersEligibility = ['John', 'Alice', 'eligible', 'Mike', 'Sarah', 'Tom'];
+
+  usersEligibility.removeWhere((element) => element == 'eligible');
+
+  print(usersEligibility);
+}
+
+
+
+q3
+
+void main() {
+  List<int> numbers = [10, 20, 5, 30, 15];
+
+  int maximum = numbers[0];
+
+  for (int number in numbers) {
+    if (number > maximum) {
+      maximum = number;
+    }
+  }
+
+  print('Maximum value: $maximum');
+}
+
+
+q4
+
+void main() {
+  List<String> originalList = ['Alice', 'Bob', 'Charlie'];
+
+  List<String> reversedList = [];
+  
+  for (int i = originalList.length - 1; i >= 0; i--) {
+    reversedList.add(originalList[i]);
+  }
+
+  print('Reversed list: $reversedList');
+}
+
+
+q5
+
+void main() {
+  List<int> numbers = [10, -5, 20, -15, 30];
+
+  List<int> positiveNumbers = [];
+  
+  for (int number in numbers) {
+    if (number >= 0) {
+      positiveNumbers.add(number);
+    }
+  }
+
+  print('Positive numbers: $positiveNumbers');
+}
+

@@ -1,0 +1,163 @@
+q1
+
+void main() {
+  List<int> numbers = [10, 20, 30];
+
+  //  Adds an element to the end of the list
+  numbers.add(40);
+  print(numbers);
+
+  //  Inserts an element at a specific index
+  numbers.insert(1, 15); 
+  print(numbers);
+
+  //  Removes the first occurrence of a specified element
+  numbers.remove(20);
+  print(numbers);
+
+  //  Removes the element at a specified index
+  numbers.removeAt(0); 
+  print(numbers);
+
+  //  Removes all elements from the list
+  List<int> toClear = [1, 2, 3];
+  toClear.clear();
+  print(toClear);
+
+  //  Checks if the list contains a specified element
+  numbers.contains(30);
+  print(numbers);
+
+  //  Finds the index of the first occurrence of a specified element
+   numbers.indexOf(30);
+  print(numbers);
+
+  //  Creates a sublist from the specified range
+  numbers.sublist(0, 2); 
+  print(numbers);
+
+  // sort: Sorts the elements in the list
+  numbers.sort();
+  print(numbers);
+
+  // reversed: Returns an iterable with the elements in reverse order
+ numbers.reversed;
+  print(numbers);
+
+ 
+}
+
+
+q2
+void main() {
+  Map ages = {'Alice': 30, 'Bob': 25, 'Charlie': 35};
+
+  // Adds all key-value pairs from another map
+  ages.addAll({'David': 40});
+  print(ages);
+  
+
+  //  Removes a specified key and its value
+  ages.remove('Bob');
+  print(ages);
+
+  // clear: Removes all key-value pairs from the map
+  Map<String, int> toClear = {'Eve': 28};
+  toClear.clear();
+  print(toClear);
+
+  // Checks if the map contains a specific key
+ ages.containsKey('Alice');
+  print(ages);
+  
+
+  // Checks if the map contains a specific value
+  
+ ages.containsValue(30);
+  print(ages);
+
+  //  Updates the value for a specific key
+  ages.update('Charlie', (value) => value + 1);
+  print(ages);
+
+// to add multiple keys and values
+  ages.addAll({'dept':'civil'});
+  print(ages);
+  
+ // remove the key starts with C
+  ages.removeWhere((key,value)=>key.startsWith('C'));
+  print(ages);
+  
+
+  
+
+q4
+void main() {
+  String str = 'jawanpakistan';
+  String reversedStr = '';
+  
+  for (int i = str.length - 1; i >= 0; i--) {
+    reversedStr = reversedStr + str[i];
+  }
+  
+  print(reversedStr);
+}
+
+
+
+q5
+
+void main() {
+  List<String> names = ['Ahmed', 'Bilal', 'Shahzeb Naqvi', 'Muhmmad', 'Ali', 'Abdullah', 'Ahmed'];
+
+  List<String> uniqueNames = names.toSet().toList();
+  
+  print('Unique names: $uniqueNames');
+}
+
+
+q6
+
+void main() {
+  List<int> numbers = [34, 7, 23, 32, 5, 62, 29];
+  
+  int smallest = numbers[0];
+  int largest = numbers[0];
+
+  for (int number in numbers) {
+    if (number < smallest) {
+      smallest = number;
+    }
+    if (number > largest) {
+      largest = number;
+    }
+  }
+
+  print('Smallest number: $smallest');
+  print('Largest number: $largest');
+}
+
+
+
+q7
+void main() {
+  String char = 'e'; 
+  char = char.toLowerCase();
+
+  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+    print('The character $char is a vowel.');
+  } else {
+    print('The character $char is not a vowel.');
+  }
+}
+
+
+q8
+void main() {
+  final List<String> nameList = ["Shahzeb Naqvi", "Abdullah", "Abdullah", "Shahzeb Naqvi", "Abdullah", "Zain"];
+
+  List<String> uniqueNames = nameList.toSet().toList();
+
+  print('Unique names: $uniqueNames');
+}
+

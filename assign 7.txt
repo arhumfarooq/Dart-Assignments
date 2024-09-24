@@ -1,0 +1,43 @@
+(1) map 
+
+void main() {
+  Map<String, int> ages = {'Arhum': 30, 'osama': 25, 
+                           'zain': 35};
+  print(ages);
+}
+
+
+
+
+(2) loops
+  
+
+void main() {
+  for (int i = 1; i <= 5; i++) {
+    print(i);
+  }
+}
+
+
+(3) list 
+
+
+void main() {
+  List<String> fruits = ['Apple', 'Banana', 'Cherry'];
+  print(fruits);
+}
+
+
+
+(4) if else 
+
+
+void main() {
+  int number = 7;
+
+  if (number % 2 == 0) {
+    print('Even');
+  } else {
+    print('Odd');
+  }
+}

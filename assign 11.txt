@@ -1,0 +1,109 @@
+
+import 'dart:io';
+
+void main() {
+  String admingmail = 'arhummalavia1@gmail.com';
+  int password = 987654;
+  // String operation = stdin.readLineSync()!;
+
+  Map main = {
+    'active': {'gmail': 'actibe12@gmail.com', 'password': 9876},
+    'restaurant': {'gmail': 'rest123@gmail.com', 'password': 1234},
+    'load': {'gmail': 'load12@gmail.com', 'password': 12345},
+  };
+
+  // String gmail = stdin.readLineSync()!;
+  // int pass = int.parse(stdin.readLineSync()!);
+
+  while (password > 0) {
+    print('welcome to the admin gmail');
+    String gmail = stdin.readLineSync()!;
+
+    print("enter the password");
+    int pass = int.parse(stdin.readLineSync()!);
+
+    if (gmail == 'arhummalavia1@gmail.com' && password == 987654) {
+      print('login successful');
+    } else {
+      print('invalid gmail and passowrd');
+      print('enter the gmail again');
+      String gmail = stdin.readLineSync()!;
+
+      print('enter the password again');
+      int pass = int.parse(stdin.readLineSync()!);
+    }
+
+    print("please enter the operation where you want to go");
+    print('  1 : for active system');
+    print('  2 : for restaurant system');
+    print('  3 : for load system');
+
+    String operation = stdin.readLineSync()!;
+
+    switch (operation) {
+      case '1':
+        print('enter the gmail');
+        String gmail1 = stdin.readLineSync()!;
+
+        print('enter the password');
+        int pass1 = int.parse(stdin.readLineSync()!);
+
+        if (gmail1 == main['active']['gmail'] &&
+            pass1 == main['active']['password']) {
+          print('wlcome to active admin');
+        } else {
+          print('try again');
+
+          print('enter the gmail');
+          String gmail1 = stdin.readLineSync()!;
+
+          print('enter the password');
+          int pass1 = int.parse(stdin.readLineSync()!);
+        }
+        break;
+
+      case '2':
+        print('enter the  restaurant gmail');
+        String gmail2 = stdin.readLineSync()!;
+
+        print('enter the restaurant password');
+        int pass2 = int.parse(stdin.readLineSync()!);
+
+        if (gmail2 == main['restaurant']['password'] &&
+            pass2 == main['restaurant']['password']) {
+          print('wlcome to restaurant admin');
+        } else {
+          print('try again');
+
+          print('enter the gmail');
+          String gmail2 = stdin.readLineSync()!;
+
+          print('enter the password');
+          int pass2 = int.parse(stdin.readLineSync()!);
+        }
+        break;
+
+      case '3':
+        print('enter the load gmail');
+        String gmail3 = stdin.readLineSync()!;
+
+        print('enter the load password');
+        int pass3 = int.parse(stdin.readLineSync()!);
+
+        if (gmail3 == main['load']['gmail'] &&
+            pass3 == main['load']['password']) {
+          print('welcome to load admin');
+        } else {
+          print('try again');
+
+          print('enter the gmail');
+          String gmail3 = stdin.readLineSync()!;
+
+          print('enter the password');
+          int pass3 = int.parse(stdin.readLineSync()!);
+        }
+        break;
+    
+    }
+  }
+}

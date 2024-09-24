@@ -1,0 +1,23 @@
+void main() {
+
+  String name = 'arhum'; 
+  
+
+  int age = 20; 
+  
+
+  String className = '1st year'; 
+  
+
+  double percentage = 85.5; 
+  
+
+  String previousResult = 'Pass';
+  
+  // Print the values to verify
+  print('Name: $name');
+  print('Age: $age');
+  print('Class: $className');
+  print('Percentage: $percentage');
+  print('Previous Result: $previousResult');
+}

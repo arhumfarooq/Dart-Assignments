@@ -1,0 +1,104 @@
+q1
+
+
+void main() {
+  
+  int phy = 85; 
+  int maths = 90; 
+  int urdu = 78; 
+  int isl = 92; 
+
+
+  int totalMarks =phy+ maths + urdu + isl;
+
+ 
+  double percentage = (totalMarks / 400) * 100;
+
+  
+  print('Marksheet:');
+  print('phy = $phy ' );
+  print('maths = $maths ' );
+  print('urdu = $urdu ' );
+  print('isl = $isl ');
+  print('Total Marks = $totalMarks');
+  print('Percentage= $percentage% ');
+}
+
+
+
+
+
+
+
+q2 
+
+
+
+void main() {
+
+int tempCelsius = 255; 
+ int tempFahrenheit = 23; 
+
+ 
+  double fahrenheitFromCelsius = (tempCelsius * 9/5) + 32;
+
+  
+  double celsiusFromFahrenheit = (tempFahrenheit - 32) * 5/9;
+
+print('the temp in fahrenheit is $fahrenheitFromCelsius ');
+  print('the temp in celcius is $celsiusFromFahrenheit ');
+  
+
+}
+
+
+
+q3
+
+void main() {
+  int length = 5;
+  int breadth = 7;
+  int area = length * breadth;
+  print('Area of the rectangle: $area');
+}
+
+
+q4
+void main() {
+  int num = 7;
+print( (((num + 8) / 3) % 5) * 5);
+  
+  
+}
+
+q5
+
+void main() {
+  int a = 30;
+  int b = 40;
+
+  bool bothConditionsTrue = (a < 50) && (a < b);
+  bool atLeastOneConditionTrue = (a < 50) || (a < b);
+
+  print(' $bothConditionsTrue');
+  print(' $atLeastOneConditionTrue');
+}
+
+
+q6
+
+void main() {
+  int maths = 78;
+  int phy = 45;
+  int chem = 62;
+
+  int totalMarks = maths + phy + chem;
+  double percentage = (totalMarks / 300) * 100;
+
+  print('Name: Robert');
+  print('maths : $maths');
+  print('phy : $phy');
+  print('chem = $chem');
+  print('Total Marks: $totalMarks');
+  print('Percentage: $percentage%');
+}

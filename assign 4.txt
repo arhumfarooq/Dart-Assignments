@@ -1,0 +1,29 @@
+q1
+
+void main() {
+  List<String> names = ['arhum', 'ahmed', 'osma', 'owais'];
+
+print(names);
+}
+
+
+q2
+
+void main() {
+  List<String> days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+  print(days[6]);
+}
+
+
+q3
+void main() {
+  List studentInfo = ['arhum', '9th Grade',
+                               '2021', 'A one', 89.5];
+
+  print('Name: ${studentInfo[0]}');
+  print('Class: ${studentInfo[1]}');
+  print('Roll No: ${studentInfo[2]}');
+  print('Grade: ${studentInfo[3]}');
+  print('Percentage: ${studentInfo[4]}%');
+}
